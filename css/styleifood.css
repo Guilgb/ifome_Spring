@@ -1,0 +1,230 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #f7f7f7;
+}
+h1,h2,p,a {
+    font-family: SulSans,Helvetica,sans-serif;;
+}
+.conteiner {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.8fr 2fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "main footer footer"
+    ;
+    grid-gap: 0.2rem;
+
+}
+
+nav {
+    display: grid;
+    background: #f7f7f7;
+    margin-top: 2vh;
+    grid-area: nav;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menu menu menu links links";
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-area: main;
+    place-items: center;
+    grid-template-areas: 
+    "texts texts texts texts"
+    "shearch shearch shearch shearch"
+    "boxes boxes boxes boxes"
+    "products products products products"
+    ;
+}
+
+footer {
+    background: pink;
+    grid-area: footer;
+}
+#logo {
+    grid-area: logo;
+    width: 12.7;
+}
+#logo img{
+    margin-left: 40vh;
+    width: 10vh;
+}
+#menu{
+    grid-area: menu;
+    margin-left: 0 auto;
+}
+#menu ul{
+    display: flex;
+}
+#menu li{
+    list-style-type: none;
+    padding: 1vh;
+}
+#menu a {
+    text-decoration: none;
+}
+
+#links {
+    grid-area: links;
+    margin-right: 20vh;
+}
+#links a{
+    text-decoration: none;
+}
+
+#create {
+    color: #ea1d2c;
+    margin-right: 5vh;
+}
+#button {
+    font-size: 1.7vh;
+    background: #ea1d2c;
+    padding-top: 1.8vh;
+    padding-bottom: 1.8vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+#texts {
+    grid-area: texts;
+    grid-column: 1/6;
+}
+#texts p{
+    text-align: center;
+    color: #373737;
+}
+
+#shearch {
+    grid-area: shearch;
+    grid-column: 1/6;
+    display: flex;
+}
+#shearch div#back{
+    height: 5vh;
+    border-radius: 0.4rem;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.048);
+}
+#shearch img {
+    width: 3.2vh;
+}
+#shearch input {
+    width: 50vh;
+    height: 2.7vh;
+    border-color: rgba(255, 235, 205, 0.113);
+    border-radius: 0.4rem;
+
+}
+#shearch button {
+    background: #ea1d2c;
+    border: none;
+    border-radius: 0.3rem;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-left: 1vh;
+    color: white;
+
+}
+#boxes {
+    grid-area: boxes;
+    grid-column: 1/6;
+}
+#products {
+    grid-area: products;
+    grid-column: 1/6;
+    background: #a90510;
+    display: flex;
+}
+#products a{
+    text-decoration: none;
+    color: black;
+}
+
+#boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#box {
+    background: #ea1d2c;
+    border-radius: 1rem;
+    width: 40vh;
+    height: 23vh;
+    margin-right: 2vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 2fr;
+    
+    
+}
+#tittleh1 {
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-left: 3vh;
+}
+#option {
+    background: #951a226f;
+    grid-column: 1/3;
+    margin-left: 3vh;
+    height: 3vh;
+    width: 13vh;
+    border-radius: 0.8rem;
+}
+#image img{
+    grid-column: 3/4;
+    grid-row: 2;
+    width: 21vh;
+}
+#option a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#box2 {
+    background: #b6d048;
+    border-radius: 1rem;
+    width: 40vh;
+    height: 23vh;
+    margin-right: 2vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 2fr;
+}
+#image2 img{
+    grid-column: 3/4;
+    grid-row: 2;
+    width: 12.3vh;
+}
+#option2 {
+    background: rgba(105, 120, 39, 0.628);
+    grid-column: 1/3;
+    margin-left: 3vh;
+    height: 3vh;
+    width: 13vh;
+    border-radius: 0.8rem;
+}
+#option2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#ico1 {
+    background: #373737;
+    width: 20vh;
+    height: 5vh;
+}
